@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGPT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+<header>
+    <div class="container-fluid bg-light py-3">
+        <h2 class="text-center">🌐ChatGPT</h2>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="chat-box" style="height: calc(100vh - 150px);">
+            </div>
+        </div>
+    </div>
+
+    <div id="msgbox">
+        <form id="chat-form" method="post">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" id="user-message" name="user-message"
+                           placeholder="输入您的问题"
+                           required>
+                </div>
+                <div class="col-auto">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">正在加载</span>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">
+                        💬发送消息
+                    </button>
+                </div>
+                <div class="col-auto">
+                    <button type="button" class="btn btn-danger" id="clear-chat">
+                        清空对话记录
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
